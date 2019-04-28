@@ -11,7 +11,7 @@ systemctl enable nginx
 #
 # Создать в директории базу данных репозитория на SQL Lite.
 createrepo /usr/share/nginx/html   
-# << HERE DOC >
+# << HERE DOC > not worked right
 echo -e " \
 [otus]\n \
 name=Otus-Linux\n \
