@@ -19,6 +19,7 @@ baseurl=http://10.10.11.18/
 enabled=l 
 gpgcheck=O 
 EOF
+
 # 
 # Подготавливается web-каталог для репозитория.
 rm -f /usr/share/nginx/html/*.png & rm -f /usr/share/nginx/html/*.html
