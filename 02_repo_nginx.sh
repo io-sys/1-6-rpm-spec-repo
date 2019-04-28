@@ -20,3 +20,8 @@ enabled=l
 gpgcheck=O 
 EOF
 # 
+# Подготавливается web-каталог для репозитория.
+rm -f /usr/share/nginx/html/*.png & rm -f /usr/share/nginx/html/*.html
+# Создать каталог repodata, в котором будут храниться все метаданные о репозитории.
+yum repolist enabled
+
