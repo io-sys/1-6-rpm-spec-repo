@@ -2,7 +2,7 @@
 #### tegs: nginx repo
 #
 # Установка репозитория epel
-yum install epel-release
+yum install -y epel-release
 # Установить nginx  
 yum install -y nginx
 # Запуск nginx
