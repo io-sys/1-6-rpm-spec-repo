@@ -40,5 +40,11 @@ sed -i.bak01 's@--without-ssl@--with-ssl=/opt/openssl-1.0.2r@' ~/rpmbuild/SPECS/
 yum-builddep -y ~/rpmbuild/SPECS/curl.spec
 # Собирается RPM curl'а с поддержкой SSL
 rpmbuild -bb ~/rpmbuild/SPECS/curl.spec
-
+# ├── RPMS
+# │   └── x86_64
+# │       ├── curl-7.29.0-51.el7.centos.x86_64.rpm
+# │       ├── curl-debuginfo-7.29.0-51.el7.centos.x86_64.rpm
+# │       ├── libcurl-7.29.0-51.el7.centos.x86_64.rpm
+# │       └── libcurl-devel-7.29.0-51.el7.centos.x86_64.rpm
+# 
 
