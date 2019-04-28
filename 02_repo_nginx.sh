@@ -12,14 +12,12 @@ systemctl enable nginx
 # Создать в директории базу данных репозитория на SQL Lite.
 createrepo /usr/share/nginx/html   
 # << HERE DOC >
-cat << EOF > /etc/yum.repos.d/otus.repo  
-[otus] 
-name=Otus-Linux 
-baseurl=http://10.10.11.18/ 
-enabled=l 
-gpgcheck=O 
-EOF
-
+echo -e " \
+[otus]\n \
+name=Otus-Linux\n \
+baseurl=http://10.10.11.18/\n \
+enabled=1\n \
+gpgcheck=0" > /etc/yum.repos.d/otus.repo  
 # 
 # Подготавливается web-каталог для репозитория.
 rm -f /usr/share/nginx/html/*.png & rm -f /usr/share/nginx/html/*.html
