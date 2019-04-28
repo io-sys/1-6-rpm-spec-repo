@@ -47,4 +47,9 @@ rpmbuild -bb ~/rpmbuild/SPECS/curl.spec
 # │       ├── libcurl-7.29.0-51.el7.centos.x86_64.rpm
 # │       └── libcurl-devel-7.29.0-51.el7.centos.x86_64.rpm
 # 
-
+# Установка  curl из собранного rpm пакета.
+yum localinstall -y ~/rpmbuild/RPMS/x86_64/curl-7.29.0-51.el7.centos.x86_64.rpm
+# Показать доступные функции curl
+curl --version
+# Тест curl'a
+curl https://ya.ru | grep "Яндекс"
